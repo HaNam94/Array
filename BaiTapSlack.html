@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập</title>
+</head>
+<body>
+<script>
+     let numbers = [1,7,5,9,2,6,7,9,7];
+     // for (let i = 0; i < numbers.length; i++){
+     //     console.log(numbers[i]);
+     // }
+
+     // for (let i = 0; i < numbers.length; i++){
+     //     if (numbers[i] % 2 === 0){
+     //         console.log(numbers[i]);
+     //     }
+     // }
+
+     let a = +prompt("Nhập số: ");
+     let b = 0;
+     for ( let i = 0; i < numbers.length; i++){
+         if (numbers[i] === a){
+             b++;
+         }
+     } console.log(a +'xuất hiện' + b + 'lần trong mảng.');
+</script>
+</body>
+</html>
