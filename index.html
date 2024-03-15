@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<script>
+    let name1 = "a";
+    let name2 = "b";
+    let name3 = "c";
+
+    //=>
+    // let array = new Array("b","c","d") // cách khai báo 2
+    // let name = ["a",'b','c']; // Khai báo mảng
+    // là một biến đặc biến có thế chứa nhiều giá trị
+    // Mảng ở trong Js thì là mảng động và có thể thay đổi giá trị khác nhau vè kiểu dữ liệu
+    // độ dài mảng : số lượng phần tử có trong mảng (lenght)
+    // console.log(name.length)
+
+
+    // chỉ số của mảng: sẽ bắt đầu từ 0 và kết thúc ở length - 1
+    // phần tử trong mảng : sẽ giá trị nằm tại một vị trí nào đó.
+    // console.log(name[1])
+
+
+    // let name = ["a","b","c"];
+    // console.log(name[2]);
+
+    // let number = [1, 5, 3, 6, 7, 89, 423, 2, 22];
+    // for( let i = 0; i < number.length; i++){
+    //     if (number[i] % 2 === 0){
+    //         console.log(number[i]); // nummber[0] = 1
+    //     }
+    //
+    // }
+
+  // Các hàm tương tác với mảng
+    let numbers = [1, 3, 5];
+    // numbers.push(67); // thêm phần tử vào mảng
+    // numbers.pop() // xóa phần tử cuối mảng
+    // console.log(numbers.join("và")); // biến mảng thành chuỗi và cách nhau bởi dấu trong ngoặc
+    // console.log(numbers.concat(numbers)); // nối 2 mảng lại tạo thành một mảng mời
+    numbers.splice(2, 1); // vị trí bắt đầu xóa, số lượng phần tự muốn xóa
+    console.log(numbers);
+
+    numbers[1] = 10;
+    numbers[3] = 12;
+</script>
+</body>
+</html>
