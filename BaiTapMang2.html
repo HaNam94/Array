@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 2</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1,3,4],
+        [3,4,5],
+        [5,5,6]
+    ];
+
+    // let sum = 0; // tổng các phần tử mảng 2 chiều
+    // for (let i = 0; i < arr.length; i++){
+    //     for (let j = 0; j < arr[0].length; j++){
+    //         sum+= arr[i][j];
+    //     } console.log(sum);
+    // }
+
+
+    // for (let i = 0; i < arr.length; i++){  // tổng các phần tử của từng hàng
+    //     let sum = 0;
+    //     for (let j = 0; j < arr[i].length; j++){
+    //         sum+= arr[i][j];
+    //     } console.log(sum);
+    // }
+
+
+    // for (let i = 0; i < arr.length; i++){  // phần tử lớn nhất trong các hàng
+    //     let max = 0;
+    //     for (let j = 0; j < arr[i].length; j++){
+    //         if (arr[i][j] > max){
+    //             max = arr[i][j];
+    //         }
+    //     } console.log(max);
+    // }
+
+    // const columnTotal = [0,0,0];  // tổng các phần tử của từng cột.
+    // for ( let i = 0; i < arr.length; i++){
+    //     for (let j = 0; j < arr[i].length; j++){
+    //         columnTotal[j]+= arr[i][j];
+    //     }
+    // }  for (let i = 0; i < columnTotal.length; i++){
+    //     console.log(columnTotal[i]);
+    // }
+
+    const  max_values = [];
+    for (let i = 0; i < arr[0].length; i++) {
+        let max_value = arr[0][i];
+        for (let j = 1; j < arr.length; j++) {
+            if (arr[j][i] > max_value) {
+                max_value = arr[j][i];
+            }
+        }  max_values.push(max_value);
+    } console.log("Phần tử lớn nhất của từng cột:");
+    for (let i = 0; i < max_values.length; i++) {
+        console.log(`Cột ${i + 1}: ${max_values[i]}`);
+    }
+
+
+
+    // let max_values = [];
+    //
+    // for (let col = 0; col < arr[0].length; col++) {
+    //     let max_col = arr[0][col];
+    //     for (let row = 1; row < arr.length; row++) {
+    //         if (arr[row][col] > max_col) {
+    //             max_col = arr[row][col];
+    //         }
+    //     }
+    //     max_values.push(max_col);
+    // }
+    //
+    // console.log("Phần tử lớn nhất của từng cột:");
+    // for (let i = 0; i < max_values.length; i++) {
+    //     console.log(`Cột ${i + 1}: ${max_values[i]}`);
+    // }
+
+</script>
+</body>
+</html>

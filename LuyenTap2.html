@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2</title>
+</head>
+<body>
+<script>
+    // let arr = [];  // In mảng 2 chều
+    // for (let i = 0; i < 5; i++) {
+    //     arr[i] = [];
+    //     for (let j = 0; j < 5; j++) {
+    //         arr[i][j] = Math.round(Math.random()*100);
+    //     }
+    // }
+    // for (let i = 0; i < arr.length; i++) {
+    //     document.write("row " + i);
+    //     document.write("<br>");
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         document.write(arr[i][j]);
+    //         document.write(" ")
+    //     }
+    //     document.write("<br>")
+    // }
+
+    // let arr = ["a","b","c",1,2,3,4,"d","e","f",1,2,3,4];  // Đảo mảng
+    // for (let i = 0; i < arr.length/2; i++) {
+    //     let trungChuyen;
+    //     trungChuyen = arr[i];
+    //     arr[i] = arr[arr.length-1-i];
+    //     arr[arr.length-1-i] = trungChuyen;
+    // }
+    //     console.log(arr);
+
+    // let chuoi = "Đây là một câu có nhiều chữ"; // Đếm số từ trong 1 mảng
+    // for (let i = 0; i < chuoi.length; i++) {
+    //     document.write(chuoi[i]);
+    //     document.write("<br>");
+    // }
+
+    let chuoi = "Đây là một chuỗi rất là dài";
+    let count = 0;
+
+    for (let i = 1; i < chuoi.length-1; i++) {
+        if (chuoi[i]==" ") {
+            count++;
+        }
+    }
+    document.write(count);
+</script>
+</body>
+</html>
